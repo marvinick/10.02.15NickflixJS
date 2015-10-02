@@ -1,0 +1,28 @@
+<div ng-show="reviews.length">
+
+  <h1>Reviews</h1>
+
+  <ul>
+    <li ng-repeat="item in reviews">
+      <a ui-sref="reviews({ reviewId: item.id })">{{ item.title }}</a>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+  <div class="col-md-4">
+    <h3>Add a new review</h3>
+    <form ng-submit="addReview()" class="form-inline" role="form">
+      <div class="form-group">
+        <input type="text" ng-model="reviewTitle" class="form-control" placeholder="Enter a review title">
+      </div>
+      <div class="form-group">
+        <input type="text" ng-model="reviewContent" class="form-control" placeholder="Enter a review title">
+      </div>
+      <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+  </div>
+
+
+<div ui-view="body"> </div>

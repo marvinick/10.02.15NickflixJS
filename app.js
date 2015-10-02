@@ -14,4 +14,17 @@ nflix.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
+  $stateProvider.state('reviews', {
+    url: "/reviews",
+    views: {
+      'header': {
+        templateUrl: 'partials/header.html',
+      },
+      'body': {
+        templateUrl: "partials/reviews.html",
+        controller: 'ReviewsCtrl'
+      }
+    }
+  })
+
 });
