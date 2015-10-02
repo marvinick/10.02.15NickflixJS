@@ -13,4 +13,5 @@ nflix.config(function($stateProvider, $urlRouterProvider) {
       },
     }
   });
+
 });
