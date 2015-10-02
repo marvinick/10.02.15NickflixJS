@@ -1,34 +1,34 @@
 <div ng-show="reviews.length">
-
-  <h1>Reviews</h1>
-
-  <div class="col-md-4">
-    <ul>
-      <li ng-repeat="item in reviews">
-        <a ui-sref="reviews({ reviewId: item.id })">{{ item.title }}</a>
-          {{ item.content }}
-      </li>
+  <div class="row">
+    <ul ng-repeat="review in reviews">
+      <div class="col-md-4">
+        <h4><a ui-sref="{{ review.title }}">{{ review.title }}</a></h4>
+      </div>
+      <div class="col-md-8">
+        {{review.content}}
+      </div>
     </ul>
-  </div>
+</div>
+
+
+
   <div class="col-md-8">
-    {{ item.content }}
-  </div>
-</div>
-</div>
-
-
-  <div class="col-md-4">
-    <h3>Add a new review</h3>
+    <strong><h3>Create New Movie Review</h3></strong>
+    <br>
     <form ng-submit="addReview()" class="form-inline" role="form">
       <div class="form-group">
         <input type="text" ng-model="reviewTitle" class="form-control" placeholder="Enter a review title">
       </div>
+      <br>
+      <br>
       <div class="form-group">
-        <input type="text" ng-model="reviewContent" class="form-control" placeholder="Enter a review title">
+        <input type="text" ng-model="reviewContent" class="form-control" placeholder="content here..." width="48" height="48">
       </div>
-      <button type="submit" class="btn btn-info">Submit</button>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-default btn-lg">Submit</button>
     </form>
   </div>
-
+</center>
 
 <div ui-view="body"> </div>
