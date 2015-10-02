@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="nflix">
+<head>
+ <meta charset="UTF-8">
+  <title>Nik's Flix </title>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/MoviesControllers.js"></script>
+  <script src="controllers/ReviewsController.js"></script>
+  <script src="services/MoviesFactory.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div ui-view></div>
+    </div>
+  </div>
+
+</body>
+</html>
