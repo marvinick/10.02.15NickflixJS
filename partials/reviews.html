@@ -2,11 +2,17 @@
 
   <h1>Reviews</h1>
 
-  <ul>
-    <li ng-repeat="item in reviews">
-      <a ui-sref="reviews({ reviewId: item.id })">{{ item.title }}</a>
-    </li>
-  </ul>
+  <div class="col-md-4">
+    <ul>
+      <li ng-repeat="item in reviews">
+        <a ui-sref="reviews({ reviewId: item.id })">{{ item.title }}</a>
+          {{ item.content }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    {{ item.content }}
+  </div>
 </div>
 </div>
 
