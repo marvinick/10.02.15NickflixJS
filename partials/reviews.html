@@ -2,27 +2,28 @@
   <div class="row" ng-repeat="review in reviews">
     <ul>
       <div class="col-md-4">
-        <h4><a ui-sref="{{ review.title }}">{{ review.title }}</a></h4>
+        <h4><span ng-click="showContent = ! showContent">{{ review.title }}</h4></span>
       </div>
       <div class="col-md-8">
+        <ul ng-show="showContent">
+          <h1 class="text-center">{{ review.title }}</h1>
+          <p>{{ review.content }}</p>
+        <ul>
       </div>
     </ul>
   </div>
-  <div class="row" ng-repeat="review in reviews">
-    <ul>
+  <div class="row">
       <div class="col-md-4">
       </div>
       <div class="col-md-8">
-        {{ review.content }}
       </div>
-    </ul>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-4"></div>
+  <div class="col-md-3"></div>
   <center>
-  <div class="col-md-8">
+  <div class="col-md-9">
     <strong><h3>Create New Movie Review</h3></strong>
     <br>
     <form ng-submit="addReview()" class="form-inline" role="form">

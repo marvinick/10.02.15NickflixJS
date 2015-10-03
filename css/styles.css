@@ -1,3 +1,7 @@
+.front {
+  padding-top: 120px
+}
+
 .box {
   background-color: #BDFCC9;
   width: 200px;
@@ -6,11 +10,7 @@
   margin: 10px;
 }
 
-.front {
-  padding-top: 120px
-}
-
-header h2 {
-  line-height: 70%;
-  margin-bottom:-15px;
+ul {
+    margin: 0;
+    padding: 0;
 }
