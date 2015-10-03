@@ -5,6 +5,14 @@
         <h4><a ui-sref="{{ review.title }}">{{ review.title }}</a></h4>
       </div>
       <div class="col-md-8">
+      </div>
+    </ul>
+  </div>
+  <div class="row" ng-repeat="review in reviews">
+    <ul>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-8">
         {{ review.content }}
       </div>
     </ul>

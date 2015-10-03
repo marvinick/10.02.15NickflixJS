@@ -6,19 +6,11 @@
   margin: 10px;
 }
 
-.box2 {
-  background-color: #CAE1FF;
-  width: 200px;
-  height: 100px;
-  padding: 10px;
-  border: 0.5px solid black;
-  margin: 30px;
+.front {
+  padding-top: 120px
 }
 
-.box3 {
-  background-color: #FFB6C1;
-  width: 200px;
-  padding: 10px;
-  border: 0.5px solid black;
-  margin: 10px;
+header h2 {
+  line-height: 70%;
+  margin-bottom:-15px;
 }
