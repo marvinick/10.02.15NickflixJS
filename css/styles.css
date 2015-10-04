@@ -1,12 +1,10 @@
 .front {
-  padding-top: 120px
+  padding-top: 100px
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+body {
+  padding-bottom: 40px;
 }
-
 
 .normal {
 	filter: invert(0%);

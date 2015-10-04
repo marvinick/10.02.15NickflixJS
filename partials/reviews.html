@@ -1,4 +1,4 @@
-<div class="jumbotron">
+
 <div ng-show="reviews.length" ng-repeat="review in reviews">
   <div class="row">
     <ul>
@@ -23,16 +23,16 @@
     <br>
     <form ng-submit="addReview()" class="form-inline" role="form">
       <div class="form-group">
-        <input type="text" ng-model="reviewTitle" class="form-control" placeholder="Enter a review title">
+        <input size="60" type="text" ng-model="reviewTitle" class="form-control" placeholder="Enter a review title">
       </div>
       <br>
       <br>
       <div class="form-group">
-        <input type="text" ng-model="reviewContent" class="form-control" placeholder="content here..." width="48" height="48">
+        <textarea rows="7" cols="63" type="text" ng-model="reviewContent" class="form-control" placeholder="content here..."></textarea>
       </div>
       <br>
       <br>
-      <button type="submit" class="btn btn-default btn-lg">Submit</button>
+      <button type="submit" class="btn btn-info btn-lg ">Submit</button>
     </form>
   </div>
   </center>
