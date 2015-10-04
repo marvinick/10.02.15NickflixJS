@@ -2,15 +2,16 @@
   padding-top: 120px
 }
 
-.box {
-  background-color: #BDFCC9;
-  width: 200px;
-  padding: 10px;
-  border: 0.5px solid black;
-  margin: 10px;
-}
-
 ul {
     margin: 0;
     padding: 0;
+}
+
+
+.normal {
+	filter: invert(0%);
+}
+
+.inverted {
+	filter: invert(100%);
 }

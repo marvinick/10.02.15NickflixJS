@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
+  <div ng-style="myStyle" class="container">
+    <button  class="btn btn-default btn-sm" ng-click="myStyle={background:'grey'}">nightmode</button>
+    <button  class="btn btn-default btn-sm" ng-click="myStyle={background:'white'}">daymode</button>
     <div ui-view="header"></div>
     <div ui-view="body"></div>
   </div>

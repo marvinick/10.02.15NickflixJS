@@ -1,29 +1,24 @@
-<div ng-show="reviews.length">
-  <div class="row" ng-repeat="review in reviews">
+<div class="jumbotron">
+<div ng-show="reviews.length" ng-repeat="review in reviews">
+  <div class="row">
     <ul>
       <div class="col-md-4">
         <h4><span ng-click="showContent = ! showContent">{{ review.title }}</h4></span>
       </div>
-      <div class="col-md-8">
-        <ul ng-show="showContent">
-          <h1 class="text-center">{{ review.title }}</h1>
-          <p>{{ review.content }}</p>
-        <ul>
+      <div class="col-lg-8" ng-show="showContent">
+        <h3 class="text-center">{{ review.title }}</h3>
+        <p>{{ review.content }}</p>
       </div>
     </ul>
   </div>
-  <div class="row">
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-8">
-      </div>
-  </div>
 </div>
+</div>
+<hr>
 
 <div class="row">
-  <div class="col-md-3"></div>
+  <div class="col-md-4"></div>
   <center>
-  <div class="col-md-9">
+  <div class="col-md-8">
     <strong><h3>Create New Movie Review</h3></strong>
     <br>
     <form ng-submit="addReview()" class="form-inline" role="form">
@@ -41,7 +36,6 @@
     </form>
   </div>
   </center>
-
 </div>
 
 <div ui-view="body"> </div>
